@@ -1,6 +1,12 @@
+/* COLOR REFERENCES
+    main-color: #607d8b
+    dark-main-color: #37474f
+    light-main-color:
+    accent-color:
+*/
+
 .navbar-default {
   background-color: #607d8b;
-  border-color: #37474f;
 }
 .navbar-default .navbar-brand {
   color: #ffffff;
