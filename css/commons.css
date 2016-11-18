@@ -2,7 +2,7 @@
     height: 650px
 }
 
-footer{
-    background-color: #607d8b;
-    height: 50px;
+.navbar-default .navbar-nav .navbar-fixed-bottom > li > .dropdown-menu > li > a {
+  margin-left: 50px;
+  margin-right: : 50px;
 }

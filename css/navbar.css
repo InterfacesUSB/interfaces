@@ -71,7 +71,10 @@
 .navbar-default .navbar-link:hover {
   color: #cfd8dc;
 }
-
+.navbar-nav-bottom > li > a {
+    margin-left: 100px;
+    margin-right: 92px;
+}
 body { padding-top: 70px; }
 
 @media (max-width: 767px) {
