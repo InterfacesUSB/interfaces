@@ -76,13 +76,13 @@
   position: absolute;
   cursor: pointer;
   background-color: #f7f7f7;
-  background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  background-image: -moz-linear-gradient(top, #FFFFFF, #CFD8DC);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#CFD8DC));
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #CFD8DC);
+  background-image: -o-linear-gradient(top, #FFFFFF, #CFD8DC);
+  background-image: linear-gradient(to bottom, #FFFFFF, #CFD8DC);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffFFFFFF', endColorstr='#ffCFD8DC', GradientType=0);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -93,13 +93,13 @@
 .slider-selection {
   position: absolute;
   background-color: #f7f7f7;
-  background-image: -moz-linear-gradient(top, #f9f9f9, #f5f5f5);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#f5f5f5));
-  background-image: -webkit-linear-gradient(top, #f9f9f9, #f5f5f5);
-  background-image: -o-linear-gradient(top, #f9f9f9, #f5f5f5);
-  background-image: linear-gradient(to bottom, #f9f9f9, #f5f5f5);
+  background-image: -moz-linear-gradient(top, #CFD8DC, #FFFFFF);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#CFD8DC), to(#FFFFFF));
+  background-image: -webkit-linear-gradient(top, #CFD8DC, #FFFFFF);
+  background-image: -o-linear-gradient(top, #CFD8DC, #FFFFFF);
+  background-image: linear-gradient(to bottom, #CFD8DC, #FFFFFF);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#fff5f5f5', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffCFD8DC', endColorstr='#ffFFFFFF', GradientType=0);
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -109,6 +109,7 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  background: #80CBC4; // custom
 }
 .slider-handle {
   position: absolute;
@@ -127,6 +128,7 @@
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   opacity: 0.8;
   border: 0px solid transparent;
+  background: #00BCD4; // custom
 }
 .slider-handle.round {
   -webkit-border-radius: 20px;
