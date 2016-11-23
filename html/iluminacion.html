@@ -14,9 +14,12 @@
         <!-- CSS scripts -->
         <link rel="stylesheet" type="text/css" href="../css/navbar.css">
         <link rel="stylesheet" type="text/css" href="../css/commons.css">
+        <link rel="stylesheet" type="text/css" href="../css/slider.css">
 
         <!-- JQUERY scripts -->
         <link rel="stylesheet" href="../jquery-js/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="../jquery-js/bootstrap-slider.js"></script>
+        <script src="../jquery-js/iluminacion.js"></script>
 
     </head>
 
@@ -52,7 +55,43 @@
         </nav>
 
         <div class="container">
-            INFO...
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../assets/cocina.jpg" alt="kitchen" weight="200" height="200"/>
+                    <div class="col-md-9">
+                        <input id="slider_kitchen" type="text" class="span2 sliderWidget" value="0" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-id="slider_kitchen1" data-slider-tooltip="hide" data-slider-handle="square" />
+                    </div>
+                    <div class="col-md-3">
+                        <p class="sliderValue" id="slider_kitchen_val">0</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="../assets/banio.jpg" alt="bathroom" weight="200" height="200"/>
+                    <div class="col-md-9">
+                        <input id="slider_bathroom" type="text" class="span2 sliderWidget" value="0" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-id="slider_bathroom1" data-slider-tooltip="hide" data-slider-handle="square" />
+                    </div>
+                    <div class="col-md-3">
+                        <p class="sliderValue" id="slider_bathroom_val">0</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="../assets/cuarto1.jpg" alt="room1" weight="200" height="200"/>
+                    <div class="col-md-9">
+                        <input id="slider_room1" type="text" class="span2 sliderWidget" value="0" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-id="slider_bathroom1" data-slider-tooltip="hide" data-slider-handle="square" />
+                    </div>
+                    <div class="col-md-3">
+                        <p class="sliderValue" id="slider_room1_val">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
         </div>
 
         <!-- BOTTOM NAVBAR -->
