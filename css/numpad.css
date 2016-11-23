@@ -1,3 +1,17 @@
+/* COLOR REFERENCES
+    primary-color: #607D8B;
+    dark-primary-color: #455A64;
+    light-primary-color: #CFD8DC;
+    text-incons: #FFFFFF;
+    accent-color-1: #00BCD4;
+    light-accent-color-1: #80DEEA;
+    accent-color-2: #13C4A3;
+    light-accent-color-2: #5CF2D4;
+    primary-text: #212121;
+    secondary-text: #757575;
+    divider-color: #BDBDBD;
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
 .span4 {
