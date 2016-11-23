@@ -14,10 +14,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Libre+Franklin:300);
 
-.container {
-    height: 650px
-}
-
 .navbar-default .navbar-nav .navbar-fixed-bottom > li > .dropdown-menu > li > a {
   margin-left: 50px;
   margin-right: : 50px;
@@ -30,11 +26,17 @@ img.center {
 }
 
 img.image_row {
-    margin-top: 10px;
-    margin-bottom: 20px
+    margin-bottom: 10px;
+    height: 190px;
+    width: 300px;
 }
 
 body {
     font-family: 'Libre Franklin', sans-serif;
     color: #212121;
+    /*background-color: #f0f3f4;*/
+}
+
+.thumbnail {
+    margin-bottom: 60px;
 }
