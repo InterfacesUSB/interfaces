@@ -38,6 +38,9 @@
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
   color: #FFFFFF;
+  font-size: large;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {

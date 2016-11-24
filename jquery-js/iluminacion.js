@@ -1,5 +1,15 @@
 $(document).ready(function () {
 
+    // living room slider
+    var changeValue_living_room = function() {
+       $('#slider_living_room_val').text(sliderLivingRoom.getValue());
+        changeBrightness('#slider_living_room_val', '#img_living_room');
+    };
+
+    var sliderLivingRoom = $('#slider_living_room').slider()
+    		.on('slide', changeValue_living_room)
+    		.data('slider');
+
     // kitchen slider
     var changeValue_kitchen = function() {
        $('#slider_kitchen_val').text(sliderKitchen.getValue());
@@ -10,16 +20,6 @@ $(document).ready(function () {
     		.on('slide', changeValue_kitchen)
     		.data('slider');
 
-    // bathroom slider
-    var changeValue_bathroom = function() {
-       $('#slider_bathroom_val').text(sliderBathroom.getValue());
-       changeBrightness('#slider_bathroom_val', '#img_bathroom');
-    };
-
-    var sliderBathroom = $('#slider_bathroom').slider()
-    		.on('slide', changeValue_bathroom)
-    		.data('slider');
-
     // room1 slider
     var changeValue_room1 = function() {
        $('#slider_room1_val').text(sliderRoom1.getValue());
@@ -28,6 +28,16 @@ $(document).ready(function () {
 
     var sliderRoom1 = $('#slider_room1').slider()
     		.on('slide', changeValue_room1)
+    		.data('slider');
+
+    // bathroom slider
+    var changeValue_bathroom = function() {
+       $('#slider_bathroom_val').text(sliderBathroom.getValue());
+       changeBrightness('#slider_bathroom_val', '#img_bathroom');
+    };
+
+    var sliderBathroom = $('#slider_bathroom').slider()
+    		.on('slide', changeValue_bathroom)
     		.data('slider');
 
 });
