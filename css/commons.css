@@ -40,3 +40,10 @@ body {
 .thumbnail {
     margin-bottom: 60px;
 }
+
+.spanicons {
+    float: right;
+    margin-right: 12px;
+    text-align: right;
+    color: #13C4A3;
+}
