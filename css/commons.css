@@ -47,3 +47,8 @@ body {
     text-align: right;
     color: #13C4A3;
 }
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
