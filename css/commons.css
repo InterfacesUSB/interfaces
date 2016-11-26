@@ -48,7 +48,15 @@ body {
     color: #13C4A3;
 }
 
-.col-centered{
+.col-centered {
     float: none;
     margin: 0 auto;
+}
+
+.icon-danger {
+    color: #C9302C;
+}
+
+.row2 {
+    margin-bottom: 30px;
 }

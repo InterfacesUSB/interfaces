@@ -77,17 +77,15 @@
     -o-transition: background-color .2s linear 0s;
 }
 
-.spanicons {
+.num-icons {
     width: 72px;
-    float: left;
-    text-align: center;
-    margin-top: 40px;
-    color: #37474f;
+    margin: 20px;
+    color: #3747ff;
     font-size: 30px;
     cursor: pointer;
 }
 
-.spanicons:hover {
+.num-icons:hover {
     color: #3498db;
     transition-property: color .2s linear 0s;
     -moz-transition: color .2s linear 0s;

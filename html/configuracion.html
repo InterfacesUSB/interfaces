@@ -14,9 +14,12 @@
         <!-- CSS scripts -->
         <link rel="stylesheet" type="text/css" href="../css/navbar.css">
         <link rel="stylesheet" type="text/css" href="../css/commons.css">
+        <link rel="stylesheet" type="text/css" href="../css/magic-check.css">
 
         <!-- JQUERY scripts -->
         <link rel="stylesheet" href="../jquery-js/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
 
     </head>
 
@@ -54,6 +57,19 @@
 
         <div class="container">
             <div class="col-md-6">
+                <div class="row2">
+                    <a href="#" class="btn btn-success">Cambiar contrase&ntilde;a</a>
+                </div>
+                <div class="row2">
+                    <div class="col-md-6">
+                        <h2>Familia De Tal</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <i class="fa fa-user-plus fa-2x" aria-hidden="true" style="margin-top: 20px; float: right;"></i>
+                    </div>
+
+                </div>
+
                 <table class="table">
                     <thead>
                         <tr>
@@ -67,45 +83,57 @@
                         <tr>
                             <th scope="row">Stefani</th>
                             <td>Castellanos</td>
-                            <td></td>
-                            <td></td>
+                            <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25" /></td>
+                            <td><i class="fa fa-user-times fa-2x" aria-hidden="true"></i></td>
                         </tr>
                         <tr>
                             <th scope="row">Antonio</th>
                             <td>Alvarez</td>
-                            <td></td>
-                            <td></td>
+                            <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25" /></td>
+                            <td><i class="fa fa-minus-square-o fa-2x icon-danger" aria-hidden="true"></i></td>
                         </tr>
                         <tr>
                             <th scope="row">Fulanita</th>
                             <td>De Tal</td>
-                            <td></td>
-                            <td></td>
+                            <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25" /></td>
+                            <td><i class="fa fa-minus-square-o fa-2x icon-danger" aria-hidden="true"></i></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="col-md-6">
-                <h2>Medida de energ&iacute;a</h2>
-                <div class="radio">
-                    <label><input type="radio" name="optEnerg" checked >Kw</label>
+                <div class="row2">
+                    <h2>Medida de energ&iacute;a</h2>
                 </div>
-                <div class="radio">
-                    <label><input type="radio" name="optEnerg">Wtz</label>
+                <div class="row2">
+                    <input class="magic-radio" type="radio" name="optEnerg" id="Kw" value="option" checked>
+                    <label for="Kw">Kw</label>
                 </div>
-                <div class="radio">
-                    <label><input type="radio" name="optEnerg">Amp</label>
+                <div class="row2">
+                    <input class="magic-radio" type="radio" name="optEnerg" id="Wtz" value="option">
+                    <label for="Wtz">Wtz</label>
                 </div>
-                <div class="radio">
-                    <label><input type="radio" name="optEnerg">Joules</label>
+                <div class="row2">
+                    <input class="magic-radio" type="radio" name="optEnerg" id="Amp" value="option">
+                    <label for="Amp">Amp</label>
                 </div>
-                <h2>Medida de temperatura</h2>
-                <div class="radio">
-                    <label><input type="radio" name="optTemp" checked > &#x2103;</label>
+                <div class="row2">
+                    <input class="magic-radio" type="radio" name="optEnerg" id="Joules" value="option">
+                    <label for="Joules">Joules</label>
                 </div>
-                <div class="radio">
-                    <label><input type="radio" name="optTemp">&#x2109;</label>
+
+                <div class="row2">
+                    <h2>Medida de temperatura</h2>
                 </div>
+                <div class="row2">
+                    <input class="magic-radio" type="radio" name="optTemp" id="Celsius" value="option" checked>
+                    <label for="Celsius">&#x2103;</label>
+                </div>
+                <div class="row2">
+                    <input class="magic-radio" type="radio" name="optTemp" id="Farenheit" value="option">
+                    <label for="Farenheit">&#x2109;</label>
+                </div>
+
             </div>
         </div>
 
@@ -117,7 +145,7 @@
                         <li><a href="main.html">
                             <i class="fa fa-bell-o fa-2x" aria-hidden="true"></i>
                         </a></li>
-                        <li><a href="#">
+                        <li><a href="reserva_energia.html">
                             <img src="../assets/panel_solar.svg" alt="panel_solar" height="25" width="25"/>
                         </a></li>
                         <li><a href="#">
