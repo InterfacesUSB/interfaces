@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- CSS scripts -->
+        <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../css/commons.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-spinedit.css">
+
+        <!-- JQUERY scripts -->
+        <link rel="stylesheet" href="../jquery-js/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="../jquery-js/bootstrap-spinedit.js"></script>
+        <script src="../jquery-js/temperatura.js"></script>
+
+    </head>
+
+   <body>
+       <!-- TOP NAVBAR -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="fa fa-bars fa-2x" aria-hidden="true"></span> <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="configuracion.html">Configuraci&oacute;n</a></li>
+                                <li><a href="#">Configuraci&oacute;n "Modo ahorrador"</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Estad&iacute;sticas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">LOGO</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">
+                            <img src="../assets/modo_ahorrador.svg" alt="modo_ahorrador" height="30"/>
+                        </a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img id="img_living_room" src="../assets/sala.jpg" class="image_row" alt="bathroom"/>
+                        <input id="stepper_living_room" type="text"/>
+                        <script type="text/javascript">
+                        $('#stepper_living_room').spinedit({
+                            minimum: 5,
+                            maximum: 25,
+                            step: 1,
+                            value: 15,
+                            numberOfDecimals: 1
+                        });
+                        </script>
+                        <span class="spanicons" id="electric_living_room">
+                            <i class="fa fa-bolt fa-2x" aria-hidden="true"></i>
+                        </span>
+                        <span class="spanicons" id="solar_living_room" hidden>
+                            <i class="fa fa-sun-o fa-2x" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img id="img_kitchen" src="../assets/cocina.jpg" class="image_row" alt="kitchen"/>
+                        <input id="slider_kitchen" type="text" value="0" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-id="slider_kitchen1" data-slider-tooltip="hide" data-slider-handle="square" />
+                        <span class="span_slider" id="slider_kitchen_val">0</span>
+                        <span class="spanicons" id="electric_kitchen">
+                            <i class="fa fa-bolt fa-2x" aria-hidden="true"></i>
+                        </span>
+                        <span class="spanicons" id="solar_kitchen" hidden>
+                            <i class="fa fa-sun-o fa-2x" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img id="img_room1" src="../assets/cuarto1.jpg" class="image_row" alt="room1"/>
+                        <input id="slider_room1" type="text" class="" value="0" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-id="slider_room11" data-slider-tooltip="hide" data-slider-handle="square" />
+                        <span class="span_slider" id="slider_room1_val">0</span>
+                        <span class="spanicons" id="electric_room1">
+                            <i class="fa fa-bolt fa-2x" aria-hidden="true"></i>
+                        </span>
+                        <span class="spanicons" id="solar_room1" hidden>
+                            <i class="fa fa-sun-o fa-2x" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img id="img_bathroom" src="../assets/banio.jpg" class="image_row" alt="bathroom"/>
+                        <input id="slider_bathroom" type="text" class="" value="0" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0" data-slider-id="slider_bathroom1" data-slider-tooltip="hide" data-slider-handle="square" />
+                        <span class="span_slider" id="slider_bathroom_val">0</span>
+                        <span class="spanicons" id="electric_bathroom">
+                            <i class="fa fa-bolt fa-2x" aria-hidden="true"></i>
+                        </span>
+                        <span class="spanicons" id="solar_bathroom" hidden>
+                            <i class="fa fa-sun-o fa-2x" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM NAVBAR -->
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-nav-bottom">
+                        <li><a href="main.html">
+                            <i class="fa fa-bell-o fa-2x" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="reserva_energia.html">
+                            <img src="../assets/panel_solar.svg" alt="panel_solar" height="25" width="25"/>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-thermometer-three-quarters fa-2x" aria-hidden="true"></i>
+                        </a></li>
+                        <li class="active"><a href="iluminacion.html">
+                            <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-pagelines fa-2x" aria-hidden="true"></i>
+                        </a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+   </body>
+</html>
