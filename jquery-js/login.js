@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     $('#clean').click(function () {
         $('#telNumber').val("");
-        $('#telNumber1').val("");
+        $('#telNumber_H').val("");
     });
 
 });
