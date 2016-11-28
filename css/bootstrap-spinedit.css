@@ -1,5 +1,13 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
+.input-group{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    left: 115px;
+    width: 70px;
+}
+
 .spinner input {
   text-align: right;
 }
