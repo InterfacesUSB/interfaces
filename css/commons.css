@@ -72,3 +72,21 @@ body {
     background-color: #607D8B;
     font-size: inherit;
 }
+
+.btn-info2 {
+    color: #FFFFFF;
+    background-color: #13C4A3;
+    border-color: #13C4A3;
+}
+
+.btn-info2:hover {
+    color: #FFFFFF;
+    background-color: #13C4A3;
+    border-color: #13C4A3;
+}
+
+.btn-info2:focus {
+    color: #FFFFFF;
+    background-color: #13C4A3;
+    border-color: #13C4A3;
+}

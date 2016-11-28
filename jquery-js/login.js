@@ -42,4 +42,14 @@ $(document).ready(function () {
         $('#telNumber_H').val("");
     });
 
+    $('#mano').click(function () {
+        $('#img_hand').hide();
+        $('#gif_hand').show();
+        window.setTimeout( redirect, 10100 ); // 5 seconds
+    });
+
 });
+
+function redirect() {
+    window.location.href = "main.html";
+}
