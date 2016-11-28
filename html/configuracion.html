@@ -168,20 +168,20 @@
                             <th scope="row">Antonio</th>
                             <td>Alvarez</td>
                             <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25"  data-toggle="modal" data-target="#biometric"/></td>
-                            <td><i class="fa fa-minus-square-o fa-2x icon-danger" aria-hidden="true"></i></td>
+                            <td><i class="fa fa-user-times fa-2x" aria-hidden="true"></i></td>
                         </tr>
                         <tr>
                             <th scope="row">Fulanita</th>
                             <td>De Tal</td>
                             <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25"  data-toggle="modal" data-target="#biometric"/></td>
-                            <td><i class="fa fa-minus-square-o fa-2x icon-danger" aria-hidden="true"></i></td>
+                            <td><i class="fa fa-user-times fa-2x" aria-hidden="true"></i></td>
                         </tr>
                     </tbody>
                 </table>
 
                 <!-- Modal -->
                 <div id="biometric" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
 
                     <!-- Modal content-->
                     <div class="modal-content">
@@ -190,7 +190,16 @@
                             <h3 class="modal-title">Retomar huella</h3>
                         </div>
                         <div class="modal-body">
-                            <p>Some text in the modal.</p>
+                            <div class="row">
+                                <div class="col-md-6 col-centered">
+                                    <div id="img_hand">
+                                        <img id="mano_config" class="img-responsive" src="../assets/mano.png" alt="mano"/>
+                                    </div>
+                                    <div id="gif_hand" hidden>
+                                        <img class="img-responsive" src="../assets/mano_animada.gif" alt="mano_animada"/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

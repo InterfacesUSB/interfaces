@@ -45,11 +45,14 @@ $(document).ready(function () {
     $('#mano').click(function () {
         $('#img_hand').hide();
         $('#gif_hand').show();
-        window.setTimeout( redirect, 10100 ); // 5 seconds
+        window.setTimeout( function(){window.location.href = "main.html"; }, 10100 ); // 10 seconds
     });
 
-});
+    $('#mano_config').click(function () {
+        $('#img_hand').hide();
+        $('#gif_hand').show();
+        window.setTimeout(function(){window.location.href = "configuracion.html"; }, 10100 ); // 10 seconds
+    });
 
-function redirect() {
-    window.location.href = "main.html";
-}
+
+});
