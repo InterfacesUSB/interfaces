@@ -6,7 +6,7 @@
     accent-color-1: #00BCD4;
     light-accent-color-1: #80DEEA;
     accent-color-2: #13C4A3;
-    light-accent-color-2: #5CF2D4;
+    light-accent-color-2: #89f5d3;
     primary-text: #212121;
     secondary-text: #757575;
     divider-color: #BDBDBD;
@@ -59,4 +59,16 @@ body {
 
 .row2 {
     margin-bottom: 30px;
+}
+
+.panel-info > .panel-heading {
+    background-color: #89F5D3;
+    color: #404040;
+}
+
+.badge {
+    float: right;
+    padding: 7px 9px;
+    background-color: #607D8B;
+    font-size: inherit;
 }
