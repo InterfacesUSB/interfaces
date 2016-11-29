@@ -92,6 +92,7 @@ body {
 }
 
 .alert-info {
-    background-color: #89f5d3;
+    background-color: #b9f9e5;
     border: #13C4A3;
+    color: #212121;
 }

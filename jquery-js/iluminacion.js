@@ -43,7 +43,7 @@ $(document).ready(function () {
     $('#electric_kitchen').click(function () {
         $('#electric_kitchen').hide();
         $('#solar_kitchen').show();
-        alertGeneral('#2', 'alert-kitchen-1', 'La sala esta utilizando energ&iacute;a el&eacute;ctrica');
+        alertGeneral('#2', 'alert-kitchen-1', 'La sala esta utilizando energ&iacute;a solar');
         alertFadeOut('#alert-kitchen-1');
     });
 
@@ -70,7 +70,7 @@ $(document).ready(function () {
     $('#electric_room1').click(function () {
         $('#electric_room1').hide();
         $('#solar_room1').show();
-        alertGeneral('#3', 'alert-room1-1', 'La sala esta utilizando energ&iacute;a el&eacute;ctrica');
+        alertGeneral('#3', 'alert-room1-1', 'La sala esta utilizando energ&iacute;a solar');
         alertFadeOut('#alert-room1-1');
     });
 
@@ -97,7 +97,7 @@ $(document).ready(function () {
     $('#electric_bathroom').click(function () {
         $('#electric_bathroom').hide();
         $('#solar_bathroom').show();
-        alertGeneral('#4', 'alert-bathroom-1', 'La sala esta utilizando energ&iacute;a el&eacute;ctrica');
+        alertGeneral('#4', 'alert-bathroom-1', 'La sala esta utilizando energ&iacute;a solar');
         alertFadeOut('#alert-bathroom-1');
     });
 
