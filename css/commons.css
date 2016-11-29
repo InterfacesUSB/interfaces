@@ -6,7 +6,7 @@
     accent-color-1: #00BCD4;
     light-accent-color-1: #80DEEA;
     accent-color-2: #13C4A3;
-    light-accent-color-2: #5CF2D4;
+    light-accent-color-2: #89f5d3;
     primary-text: #212121;
     secondary-text: #757575;
     divider-color: #BDBDBD;
@@ -59,4 +59,40 @@ body {
 
 .row2 {
     margin-bottom: 30px;
+}
+
+.panel-info > .panel-heading {
+    background-color: #89F5D3;
+    color: #404040;
+}
+
+.badge {
+    float: right;
+    padding: 7px 9px;
+    background-color: #607D8B;
+    font-size: inherit;
+}
+
+.btn-info2 {
+    color: #FFFFFF;
+    background-color: #13C4A3;
+    border-color: #13C4A3;
+}
+
+.btn-info2:hover {
+    color: #FFFFFF;
+    background-color: #13C4A3;
+    border-color: #13C4A3;
+}
+
+.btn-info2:focus {
+    color: #FFFFFF;
+    background-color: #13C4A3;
+    border-color: #13C4A3;
+}
+
+.alert-info {
+    background-color: #b9f9e5;
+    border: #13C4A3;
+    color: #212121;
 }

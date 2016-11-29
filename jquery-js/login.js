@@ -39,7 +39,20 @@ $(document).ready(function () {
 
     $('#clean').click(function () {
         $('#telNumber').val("");
-        $('#telNumber1').val("");
+        $('#telNumber_H').val("");
     });
+
+    $('#mano').click(function () {
+        $('#img_hand').hide();
+        $('#gif_hand').show();
+        window.setTimeout( function(){window.location.href = "main.html"; }, 10100 ); // 10 seconds
+    });
+
+    $('#mano_config').click(function () {
+        $('#img_hand').hide();
+        $('#gif_hand').show();
+        window.setTimeout(function(){window.location.href = "configuracion.html"; }, 10100 ); // 10 seconds
+    });
+
 
 });

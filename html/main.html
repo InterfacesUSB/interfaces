@@ -14,9 +14,11 @@
         <!-- CSS scripts -->
         <link rel="stylesheet" type="text/css" href="../css/navbar.css">
         <link rel="stylesheet" type="text/css" href="../css/commons.css">
+        <link rel="stylesheet" type="text/css" href="../css/notification.css">
 
         <!-- JQUERY scripts -->
         <link rel="stylesheet" href="../jquery-js/font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="../jquery-js/main.js"></script>
 
     </head>
 
@@ -52,7 +54,103 @@
         </nav>
 
         <div class="container">
-            INFO...
+            <div class="row2">
+                <h2>&iexcl;Bienvenida Fulanita!</h2>
+            </div>
+            <div class="panel panel-default notification " id="notification1">
+                <div class="panel-heading">
+                    <i class="fa fa-pagelines fa-2x icon-info" aria-hidden="true"></i>
+                    <span class="text">
+                        El suelo tiene un <span id="manto1">50</span>% de humedad
+                    </span>
+                    <div class="action">
+                        <a class="fa fa-chevron-down icon-colappse" data-toggle="collapse" href="#collapse1"></a>
+                        <i class="fa fa-check-square-o fa-2x icon-accept notification1" aria-hidden="true"></i>
+                        <i class="fa fa-minus-square-o fa-2x icon-dismiss notification1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Mas info...
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default notification" id="notification2">
+                <div class="panel-heading">
+                    <i class="fa fa-lightbulb-o fa-2x icon-warning" aria-hidden="true">&nbsp;</i>
+                    <span class="text">
+                        La luces de la cocina est&aacute;n prendidas
+                    </span>
+                    <div class="action">
+                        <a class="fa fa-chevron-down icon-colappse" data-toggle="collapse" href="#collapse2"></a>
+                        <i class="fa fa-check-square-o fa-2x icon-accept notification2" aria-hidden="true"></i>
+                        <i class="fa fa-minus-square-o fa-2x icon-dismiss notification2" aria-hidden="true"></i>
+                    </div>
+                </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Los sensores no detectan a nadie en la cocina y las luces estan prendidas &iexcl;ap&aacute;gala!
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default notification" id="notification3">
+                <div class="panel-heading">
+                    <i class="fa fa-thermometer-three-quarters fa-2x icon-danger" aria-hidden="true">&nbsp;</i>
+                    <span class="text">
+                        La temperatura de la sala es 30 &#x2103;
+                    </span>
+                    <div class="action">
+                        <a class="fa fa-chevron-down icon-colappse" data-toggle="collapse" href="#collapse3"></a>
+                        <i class="fa fa-check-square-o fa-2x icon-accept notification3" aria-hidden="true"></i>
+                        <i class="fa fa-minus-square-o fa-2x icon-dismiss notification3" aria-hidden="true"></i>
+                    </div>
+                </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Disminuye la temperatura para tener un ambiente m&acute;s fresco
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default notification" id="notification4">
+                <div class="panel-heading">
+                    <i class="fa fa-lightbulb-o fa-2x icon-info" aria-hidden="true">&nbsp;</i>
+                    <span class="text">
+                        La luces de la sala est&aacute;n al 50% de iluminaci&ocute;n
+                    </span>
+                    <div class="action">
+                        <a class="fa fa-chevron-down icon-colappse" data-toggle="collapse" href="#collapse4"></a>
+                        <i class="fa fa-check-square-o fa-2x icon-accept notification4" aria-hidden="true"></i>
+                        <i class="fa fa-minus-square-o fa-2x icon-dismiss notification4" aria-hidden="true"></i>
+                    </div>
+                </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Estas luces son ideales para una cena rom&acute;
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default notification" id="notification5">
+                <div class="panel-heading">
+                    <i class="fa fa-thermometer-three-quarters fa-2x icon-warning" aria-hidden="true">&nbsp;</i>
+                    <span class="text">
+                        La luces de la cocina est&aacute;n prendidas
+                    </span>
+                    <div class="action">
+                        <a class="fa fa-chevron-down icon-colappse" data-toggle="collapse" href="#collapse5"></a>
+                        <i class="fa fa-check-square-o fa-2x icon-accept notification5" aria-hidden="true"></i>
+                        <i class="fa fa-minus-square-o fa-2x icon-dismiss notification5" aria-hidden="true"></i>
+                    </div>
+                </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Los sensores no detectan a nadie en la cocina y las luces estan prendidas &iexcl;ap&aacute;gala!
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- BOTTOM NAVBAR -->

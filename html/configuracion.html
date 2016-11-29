@@ -15,10 +15,11 @@
         <link rel="stylesheet" type="text/css" href="../css/navbar.css">
         <link rel="stylesheet" type="text/css" href="../css/commons.css">
         <link rel="stylesheet" type="text/css" href="../css/magic-check.css">
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
 
         <!-- JQUERY scripts -->
         <link rel="stylesheet" href="../jquery-js/font-awesome-4.7.0/css/font-awesome.min.css">
-
+        <script src="../jquery-js/login.js"></script>
 
 
     </head>
@@ -58,7 +59,84 @@
         <div class="container">
             <div class="col-md-6">
                 <div class="row2">
-                    <a href="#" class="btn btn-success">Cambiar contrase&ntilde;a</a>
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-info2 btn-lg" data-toggle="modal" data-target="#password">Cambiar contrase&ntilde;a</button>
+                    <!-- Modal -->
+                    <div id="password" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                        <!-- Modal num-pad-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h3 class="modal-title">Cambiar contrase&ntilde;a</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <input type="tel" name="name" id="telNumber" class="form-control" value="" disabled/>
+                                            <input type="hidden" name="name" id="telNumber_H" class="form-control" value=""/>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div id="unmask_password">
+                                                <i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>
+                                            </div>
+                                            <div id="mask_password" hidden>
+                                                <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row2">
+                                        <div class="col-md-9 num-pad col-centered">
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 1 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 2 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 3 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 4 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 5 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 6 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 7 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 8 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 9 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> * </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> 0 </div></div>
+                                            </div>
+                                            <div class="span4">
+                                                <div class="num"><div class="txt"> # </div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a href="" class="btn btn-success btn-block">LISTO</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button type="button" id="clean" class="btn btn-danger btn-block">LIMPIAR</button>
+                                        </div>
+                                    </div>
+                                </div>  <!-- en modal body -->
+                            </div>  <!-- end modal content  -->
+                        </div>
+                    </div> <!-- end modal  -->
                 </div>
                 <div class="row2">
                     <div class="col-md-6">
@@ -83,23 +161,50 @@
                         <tr>
                             <th scope="row">Stefani</th>
                             <td>Castellanos</td>
-                            <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25" /></td>
+                            <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25"  data-toggle="modal" data-target="#biometric"/></td>
                             <td><i class="fa fa-user-times fa-2x" aria-hidden="true"></i></td>
                         </tr>
                         <tr>
                             <th scope="row">Antonio</th>
                             <td>Alvarez</td>
-                            <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25" /></td>
-                            <td><i class="fa fa-minus-square-o fa-2x icon-danger" aria-hidden="true"></i></td>
+                            <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25"  data-toggle="modal" data-target="#biometric"/></td>
+                            <td><i class="fa fa-user-times fa-2x" aria-hidden="true"></i></td>
                         </tr>
                         <tr>
                             <th scope="row">Fulanita</th>
                             <td>De Tal</td>
-                            <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25" /></td>
-                            <td><i class="fa fa-minus-square-o fa-2x icon-danger" aria-hidden="true"></i></td>
+                            <td><img class="center" src="../assets/huella.png" alt="huella" height="25" width="25"  data-toggle="modal" data-target="#biometric"/></td>
+                            <td><i class="fa fa-user-times fa-2x" aria-hidden="true"></i></td>
                         </tr>
                     </tbody>
                 </table>
+
+                <!-- Modal -->
+                <div id="biometric" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">Retomar huella</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6 col-centered">
+                                    <div id="img_hand">
+                                        <img id="mano_config" class="img-responsive" src="../assets/mano.png" alt="mano"/>
+                                    </div>
+                                    <div id="gif_hand" hidden>
+                                        <img class="img-responsive" src="../assets/mano_animada.gif" alt="mano_animada"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
                 <div class="row2">
