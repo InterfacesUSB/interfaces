@@ -16,11 +16,21 @@ $(document).ready(function () {
     $('#electric_living_room').click(function () {
         $('#electric_living_room').hide();
         $('#solar_living_room').show();
+        var alert1 = '<div id="alert-living_room-1" class="alert alert-info">';
+        var text = 'La sala esta utilizando energ&iacute;a solar';
+        var alert2 = '</div>';
+        $('#1').append(alert1 + text + alert2);
+        alertFadeOut("#alert-living_room-1");
     });
 
     $('#solar_living_room').click(function () {
         $('#solar_living_room').hide();
         $('#electric_living_room').show();
+        var alert1 = '<div id="alert-living_room-2" class="alert alert-info">';
+        var text = 'La sala esta utilizando energ&iacute;a el&eacute;ctrica ';
+        var alert2 = '</div>';
+        $('#1').append(alert1 + text + alert2);
+        alertFadeOut("#alert-living_room-2");
     });
 
     // kitchen slider
@@ -39,11 +49,21 @@ $(document).ready(function () {
     $('#electric_kitchen').click(function () {
         $('#electric_kitchen').hide();
         $('#solar_kitchen').show();
+        var alert1 = '<div id="alert-kitchen-1" class="alert alert-info">';
+        var text = 'La cocina esta utilizando energ&iacute;a solar';
+        var alert2 = '</div>';
+        $('#2').append(alert1 + text + alert2);
+        alertFadeOut("#alert-kitchen-1");
     });
 
     $('#solar_kitchen').click(function () {
         $('#solar_kitchen').hide();
         $('#electric_kitchen').show();
+        var alert1 = '<div id="alert-kitchen-2" class="alert alert-info">';
+        var text = 'La cocina esta utilizando energ&iacute;a solar';
+        var alert2 = '</div>';
+        $('#2').append(alert1 + text + alert2);
+        alertFadeOut("#alert-kitchen-2");
     });
 
     // room1 slider
@@ -62,11 +82,21 @@ $(document).ready(function () {
     $('#electric_room1').click(function () {
         $('#electric_room1').hide();
         $('#solar_room1').show();
+        var alert1 = '<div id="alert-room1-1" class="alert alert-info">';
+        var text = 'La cocina esta utilizando energ&iacute;a solar';
+        var alert2 = '</div>';
+        $('#3').append(alert1 + text + alert2);
+        alertFadeOut("#alert-room1-1");
     });
 
     $('#solar_room1').click(function () {
         $('#solar_room1').hide();
         $('#electric_room1').show();
+        var alert1 = '<div id="alert-room1-2" class="alert alert-info">';
+        var text = 'La cocina esta utilizando energ&iacute;a solar';
+        var alert2 = '</div>';
+        $('#3').append(alert1 + text + alert2);
+        alertFadeOut("#alert-room1-2");
     });
 
     // bathroom slider
@@ -85,11 +115,21 @@ $(document).ready(function () {
     $('#electric_bathroom').click(function () {
         $('#electric_bathroom').hide();
         $('#solar_bathroom').show();
+        var alert1 = '<div id="alert-bathroom-1" class="alert alert-info">';
+        var text = 'La cocina esta utilizando energ&iacute;a solar';
+        var alert2 = '</div>';
+        $('#4').append(alert1 + text + alert2);
+        alertFadeOut("#alert-bathroom-1");
     });
 
     $('#solar_bathroom').click(function () {
         $('#solar_bathroom').hide();
         $('#electric_bathroom').show();
+        var alert1 = '<div id="alert-bathroom-2" class="alert alert-info">';
+        var text = 'La cocina esta utilizando energ&iacute;a solar';
+        var alert2 = '</div>';
+        $('#4').append(alert1 + text + alert2);
+        alertFadeOut("#alert-bathroom-2");
     });
 
 });
@@ -120,4 +160,11 @@ function changeBrightness(id_val, id_img) {
            '-o-filter' : brightness_img,
            '-ms-filter' : brightness_img,
     });
+}
+
+function alertFadeOut(id) {
+    window.setTimeout( function(){
+        $(id).fadeOut("slow", function() { $(this).remove();});
+    }, 2000
+    ); // 2 seconds
 }
