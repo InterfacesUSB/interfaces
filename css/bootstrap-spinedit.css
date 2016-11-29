@@ -2,9 +2,8 @@
 
 .input-group{
     position: relative;
-    display: table;
+    display: inline-flex;
     border-collapse: separate;
-    left: 115px;
     width: 70px;
 }
 
