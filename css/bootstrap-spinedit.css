@@ -5,6 +5,7 @@
     display: inline-flex;
     border-collapse: separate;
     width: 70px;
+    left: 30px;
 }
 
 .spinner input {
