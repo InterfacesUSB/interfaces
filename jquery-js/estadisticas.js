@@ -1,26 +1,23 @@
-function showSemana() {
-    var img1 = document.getElementById('semana');
-    img1.style.visibility = 'visible';
-    var img2 = document.getElementById('mes');
-    img2.style.visibility = 'hidden';
-    var img3 = document.getElementById('anio');
-    img3.style.visibility = 'hidden';  
-}
+$(document).ready(function () {
 
-function showMes() {
-    var img1 = document.getElementById('semana');
-    img1.style.visibility = 'hidden';
-    var img2 = document.getElementById('mes');
-    img2.style.visibility = 'visible';
-    var img3 = document.getElementById('anio');
-    img3.style.visibility = 'hidden';  
-}
+    $('#semana').click(function () {
+        $('#grafo1').show();
+        $('#grafo2').hide();
+        $('#grafo3').hide();
 
-function showAnio() {
-    var img1 = document.getElementById('semana');
-    img1.style.visibility = 'hidden';
-    var img2 = document.getElementById('mes');
-    img2.style.visibility = 'hidden';
-    var img3 = document.getElementById('anio');
-    img3.style.visibility = 'visible';  
-}
+    });
+
+    $('#mes').click(function () {
+        $('#grafo1').hide();
+        $('#grafo2').show();
+        $('#grafo3').hide();
+
+    });
+    
+    $('#anio').click(function () {
+        $('#grafo1').hide();
+        $('#grafo2').hide();
+        $('#grafo3').show();
+
+    });
+});
