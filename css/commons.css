@@ -90,3 +90,8 @@ body {
     background-color: #13C4A3;
     border-color: #13C4A3;
 }
+
+.alert-info {
+    background-color: #89f5d3;
+    border: #13C4A3;
+}
