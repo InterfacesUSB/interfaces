@@ -4,12 +4,12 @@
     position: relative;
     display: inline-flex;
     border-collapse: separate;
-    width: 70px;
-    left: 30px;
+    width: 60px;
+    left: 20px;
 }
 
 .spinner input {
-  text-align: right;
+  text-align: center;
 }
 
 .input-group-btn-vertical {
